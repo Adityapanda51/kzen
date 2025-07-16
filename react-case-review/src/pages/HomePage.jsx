@@ -1,7 +1,7 @@
 import React from 'react';
 import FreeCaseReviewCard from '../components/FreeCaseReviewCard/FreeCaseReviewCard';
 import MesotheliomaInfoCard from '../components/MesotheliomaInfoCard/MesotheliomaInfoCard';
-import ClaimForm from '../components/claimform/ClaimForm';
+import ClaimForm from '../components/Claimform/ClaimForm';
 
 export default function HomePage() {
   return (
