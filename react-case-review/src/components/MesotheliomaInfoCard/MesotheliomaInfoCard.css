@@ -1,0 +1,99 @@
+.meso-info-card {
+  background: #F5E7DA;
+  border-radius: 24px;
+  box-shadow: 0 2px 16px rgba(60, 40, 90, 0.08);
+  padding: 16px 20px 12px 20px; 
+  width: 100%;
+  max-width: 420px;
+  margin-bottom: 0;
+  color: #222;
+  z-index: 2;
+  text-align: left;
+}
+
+.meso-info-title {
+  font-size: 1.3rem; 
+  font-weight: 900;
+  color: #4b326e;
+  margin-bottom: 8px; 
+  text-align: left;
+}
+
+.meso-info-desc {
+  font-size: 0.95rem; 
+  margin-bottom: 8px; 
+  color: #222;
+  text-align: left;
+}
+
+.meso-info-list {
+  margin: 0;
+  padding-left: 28px; 
+  font-size: 0.95rem;
+  color: #222;
+  text-align: left;
+}
+
+.meso-info-list li {
+  list-style: disc;
+  font-weight: 300;
+  font-size: 0.95rem;
+  color: #4b326e;
+  margin-bottom: 6px; 
+}
+
+
+.cards-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px; 
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0; 
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; 
+  flex: 1 1 350px;
+  max-width: 420px;
+}
+
+.claim-form-card {
+  flex: 2 1 600px;
+  max-width: 600px;
+}
+
+
+@media (max-width: 900px) {
+  .meso-info-card {
+    max-width: 100%;
+    padding: 12px 8px;
+    border-radius: 16px;
+  }
+
+  .meso-info-title {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+  .meso-info-desc,
+  .meso-info-list li {
+    font-size: 0.9rem;
+  }
+
+  .cards-layout {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    padding: 16px 0;
+  }
+
+  .left-column,
+  .claim-form-card {
+    max-width: 100%;
+  }
+}

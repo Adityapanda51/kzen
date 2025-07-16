@@ -1,0 +1,33 @@
+.free-case-card-outer {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  margin: auto;
+  border-radius: 32px;
+  
+}
+
+.free-case-card-image {
+  width: 400;
+  height: 400;
+  display: block;
+  border-radius: 32px;
+}
+
+.contact-us-hotspot {
+  position: absolute;
+  bottom: 5%;  
+  right: 5%;   
+  width: 34%;  
+  height: 11%;  
+  cursor: pointer;
+  z-index: 2;
+}
+
+
+
+
+  
+
+
+

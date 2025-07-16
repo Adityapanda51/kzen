@@ -1,0 +1,227 @@
+.claim-form {
+  background: #2E4A7D;
+  opacity: 0.8;
+  backdrop-filter: blur(16px);
+  border-radius: 36px;
+  border: 1.5px solid rgba(255,255,255,0.18);
+  padding: 32px 24px 24px 24px;
+  box-shadow: 0 8px 40px rgba(60, 40, 90, 0.13);
+  width: 100%;
+  max-width: 480px;
+  min-height: 700px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.claim-form-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #fff;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+.claim-form-row {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.claim-form-group {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.claim-form-group label {
+  font-size: 1.08rem;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 2px;
+  letter-spacing: 0.01em;
+}
+
+.claim-form-group input,
+.claim-form-group select,
+.claim-form-group textarea {
+  border: none;
+  border-bottom: 1.5px solid #f3eede;
+  border-radius: 0;
+  background: transparent;
+  padding: 10px 0 6px 0;
+  font-size: 0.98rem;
+  color: #fff;
+  outline: none;
+  margin-bottom: 0;
+  font-family: inherit;
+  box-shadow: none;
+  transition: border-color 0.2s;
+}
+.claim-form-group input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+.claim-form-group input:focus,
+.claim-form-group select:focus,
+.claim-form-group textarea:focus {
+  border-bottom: 2.5px solid #c7a77a;
+  background: transparent;
+}
+
+.input-icon-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.input-icon-group input,
+.input-icon-group select {
+  width: 100%;
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.claim-form-group textarea {
+  resize: vertical;
+  min-height: 48px;
+  max-height: 140px;
+}
+
+.claim-form-checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #fff;
+  line-height: 1.4;
+}
+.checkbox-label input[type="checkbox"] {
+  accent-color: #c7a77a;
+  width: 10px;
+  height: 10px;
+  margin-top: 2px;
+}
+.checkbox-label span {
+  text-align: left;
+  display: block;
+  width: 100%;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.plain-link {
+  color: inherit;              
+  text-decoration: none; 
+  font-weight: bold;      
+  border-bottom: 1px solid;   
+}
+
+.plain-link u {
+  text-decoration: none;       
+}
+
+.claim-form-btn {
+  background: #F5E7DA;
+  color: #222;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 14px;
+  padding: 14px 0;
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(60, 40, 90, 0.10);
+}
+.claim-form-btn:hover {
+  background: #e6d3b2;
+}
+
+.claim-form-group input::placeholder,
+.claim-form-group textarea::placeholder,
+.claim-form-group select:invalid {
+  color: #f3eede;
+  opacity: 1;
+}
+
+/* For cross-browser support */
+.claim-form-group input::-webkit-input-placeholder,
+.claim-form-group textarea::-webkit-input-placeholder {
+  color: #f3eede;
+}
+.claim-form-group input:-ms-input-placeholder,
+.claim-form-group textarea:-ms-input-placeholder {
+  color: #f3eede;
+}
+.claim-form-group input::-ms-input-placeholder,
+.claim-form-group textarea::-ms-input-placeholder {
+  color: #f3eede;
+}
+
+.claim-form input[type="checkbox"] {
+  accent-color: #c7a77a;
+  width: 10px;
+  height: 10px;
+  margin-top: 2px;
+  min-width: 15px;
+  min-height: 15px;
+  box-sizing: border-box;
+}
+
+
+
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+
+.btn-label-mobile {
+  display: none;
+}
+
+.btn-label-desktop {
+  display: inline;
+}
+.arrow {
+  font-size: 1.2em;
+  margin-left: 6px;
+}
+
+@media (max-width: 900px) {
+  .claim-form {
+    padding: 24px 8px 18px 8px;
+    border-radius: 20px;
+    max-width: 100%;
+  }
+  .claim-form-row {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .claim-form-btn {
+    padding: 16px 0;
+    font-size: 1.1rem;
+  }
+  .btn-label-desktop {
+    display: none;
+  }
+  .btn-label-mobile {
+    display: inline;
+  }
+} 
